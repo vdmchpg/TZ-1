@@ -19,7 +19,7 @@ type Props = RouteComponentProps<{ pageId: string }> & StateProps & DispatchProp
 const clamp = (value: number, min: number, max: number): number => Math.max(min, Math.min(max, value));
 
 const moveTo = (currentPage: number | string | undefined, offset: number, totalPage: number) => {
-  navigate(`/news/${clamp(Number(currentPage) + offset, 1, totalPage)}`);
+  navigate(`news/${clamp(Number(currentPage) + offset, 1, totalPage)}`);
 };
 
 export const Content: React.SFC<Props> = (props): JSX.Element => {

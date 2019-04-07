@@ -11,16 +11,18 @@ import { NewsContent } from './pages/news/NewsContent';
 import { ProfileContent } from './pages/profile/ProfileContent';
 import { Error } from './pages/error/Error';
 
+const BASE = '/TZ-1';
+
 export const Application = (): JSX.Element => (
   <React.Fragment>
-    <Toolbar />
+    <Toolbar basepath={BASE} />
     <Content>
-      <Router basepath="/TZ-1">
+      <Router basepath={BASE}>
         <HomeContent path="/" />
         <LoginContent path="login" />
-        <Redirect from="news" to="news/1" noThrow />
+        <Redirect from="news" to={`${BASE}/news/1`} noThrow />
         <NewsContent path="news/:pageId" />
-        <Secured path="profile">
+        <Secured path="profile" basepath={BASE}>
           <ProfileContent default />
         </Secured>
         <Error default />
