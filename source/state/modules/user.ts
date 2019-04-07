@@ -49,7 +49,7 @@ export const login = (params: LoginParams) => async (
 
   try {
     const user = await api.login(params);
-    navigate('/profile');
+    navigate('profile');
     dispatch({
       type: 'user/login/resolve',
       payload: user,

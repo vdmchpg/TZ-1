@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import { RootState } from '../../../state/modules';
 import { User } from '../../../state/modules/user';
 
-type Props = RouteComponentProps & User;
+type Props = RouteComponentProps & User & { basepath?: string }
 
-export const SecuredRoute: React.SFC<Props> = ({ children, username }): JSX.Element => {
+export const SecuredRoute: React.SFC<Props> = ({ children, username, basepath }): JSX.Element => {
   if (username == null) {
-    return <Redirect to="/login" noThrow />;
+    return <Redirect to={`${basepath}/login`} noThrow />;
   }
 
   return (
