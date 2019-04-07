@@ -15,7 +15,7 @@ export const Application = (): JSX.Element => (
   <React.Fragment>
     <Toolbar />
     <Content>
-      <Router>
+      <Router basepath="/TZ-1">
         <HomeContent path="/" />
         <LoginContent path="login" />
         <Redirect from="news" to="news/1" noThrow />
