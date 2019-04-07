@@ -1,0 +1,20 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #cecece;
+  border: 1px dashed rgba(0, 0, 0, 0.24);
+}
+
+.field > span {
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 1em;
+  font-style: italic;
+}
