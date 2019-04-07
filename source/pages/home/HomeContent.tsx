@@ -22,7 +22,7 @@ export const HomeContent: React.SFC<RouteComponentProps> = (): JSX.Element => (
       <li>[x] использован typescript</li>
       <li>[&nbsp;&nbsp;] оформление</li>
       <li>[&nbsp;&nbsp;] docker</li>
-      <li>[x] demo (ссылка)</li>
+      <li>[x] demo (http://epodivilov.github.io/TZ-1/)</li>
     </ul>
   </div>
 );
