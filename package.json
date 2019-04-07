@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel source/index.html",
-    "build": "parcel build source/index.html",
+    "build": "parcel build source/index.html --public-url ./",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
     "check-types": "tsc",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "Evgeniy Podivilov <evgeniy.podivilov@gmail.com>",
