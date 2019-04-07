@@ -536,4 +536,4 @@ module.exports={};
 },{}],"zo2T":[function(require,module,exports) {
 "use strict";var e=c(require("react")),r=require("react-dom"),t=require("react-redux"),u=require("./Application"),a=c(require("./state/store"));require("./index.css");var i=require("./state/modules/user");function c(e){return e&&e.__esModule?e:{default:e}}a.default.dispatch((0,i.check)()),(0,r.render)(e.default.createElement(t.Provider,{store:a.default},e.default.createElement(u.Application,null)),document.querySelector("#root"));
 },{"react":"1n8/","react-dom":"NKHc","react-redux":"jYI/","./Application":"MLmL","./state/store":"vWUd","./index.css":"vKFU","./state/modules/user":"gAKb"}]},{},["zo2T"], null)
-//# sourceMappingURL=/source.847b1fd4.js.map
+//# sourceMappingURL=source.847b1fd4.js.map
