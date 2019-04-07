@@ -18,7 +18,7 @@ TZ #1, v.2.0
 - [x] использован typescript
 - [ ] оформление
 - [ ] docker
-- [x] demo (ссылка)
+- [x] demo (http://epodivilov.github.io/TZ-1/)
 
 ## Вопросы
 
